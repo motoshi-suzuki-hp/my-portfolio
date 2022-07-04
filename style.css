@@ -1,0 +1,307 @@
+html, body {
+    font-size: 16px;
+    font-family: 游明朝, "Yu Mincho", YuMincho, "Hiragino Mincho ProN", "Hiragino Mincho Pro", HGS明朝E, メイリオ, Meiryo, serif;
+    background-color: #F9F7F3;
+}
+
+
+
+
+
+
+header {
+    width: 100vw;
+    height: calc(100vw/1920*1080);
+    position: relative;
+}
+
+header img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.header-menu_pc {
+    position: relative;
+    top: 20%;
+    left: 65%;
+    width: fit-content;
+    margin: 0;
+}
+
+
+.header-list {
+    line-height: 2.5;
+}
+
+.header-list li a {
+    font-size: 20px;
+    color: #666666;
+    width: 100%;
+}
+
+.title {
+    margin: 25px 0;
+    font-size: 52px;
+    color: #666666;
+    position: absolute;
+    top: 45%;
+    left: 65%;
+}
+
+.hamburger-button {
+    display: none;
+}
+
+.header-menu_sp {
+    display: none;
+}
+
+.modal {
+    display: none;
+}
+
+
+
+
+
+
+.subtitle {
+    border-bottom: #666666 solid 1px;
+    width: 100%;
+    margin: 25px 0;
+}
+
+.subtitle h2 {
+    color: #666666;
+    font-size: 30px;
+}
+
+
+section {
+    width: 960px;
+    margin: 50px auto;
+}
+
+.about-content, .profile-content, .works-content {
+    width: 75%;
+    margin: 0 auto;
+    color: #888888;
+}
+
+
+
+/*profile*/
+.profile-content h3  {
+    font-size: 25px;
+    margin: 15px 0;
+}
+
+.profile-content h3 span  {
+    font-size: 17px;
+}
+
+.profile-list {
+    line-height: 2;
+}
+
+
+
+@media screen and (max-width:960px) {
+
+
+
+
+
+    .header-list li a {
+        font-size: 13px;
+    }
+
+    .title {
+        margin: 25px 0;
+        font-size: 44px;
+    }
+
+
+    
+    .subtitle h2 {
+        font-size: 27px;
+    }
+    
+    section {
+        width: 768px;
+        margin: 50px auto;
+    }
+    
+
+}
+
+@media screen and (max-width:768px) {
+
+
+    .header-menu_pc {
+        position: relative;
+        top: 20%;
+        left: 65%;
+        width: fit-content;
+        margin: 0;
+    }
+    
+
+
+    .title {
+        margin: 17px 0;
+        font-size: calc(100vw/18);
+    }
+
+    .header-menu_pc {
+        display: none;
+    }
+
+
+
+
+
+    .hamburger-button {
+        display: block;
+        position: relative;
+        cursor: pointer;
+        width: 50px;
+        height:50px;
+        border-radius: 5px;
+        z-index: 3;
+        float: right;
+    }
+
+    .hamburger-button span{
+        display: inline-block;
+        transition: all .4s;
+        position: absolute;
+        left: 14px;
+        height: 3px;
+        border-radius: 2px;
+        background: #666666;
+        width: 50%;
+    }
+    
+    .hamburger-button span:nth-of-type(1) {
+        top:15px;	
+    }
+    
+    .hamburger-button span:nth-of-type(2) {
+        top:23px;
+    }
+    
+    .hamburger-button span:nth-of-type(3) {
+        top:31px;
+    }
+    
+    
+    .hamburger-button.active span:nth-of-type(1) {
+        top: 18px;
+        left: 18px;
+        transform: translateY(6px) rotate(-45deg);
+        width: 35%;
+        color: #666666;
+
+        background-color: #666666;
+    }
+    
+    .hamburger-button.active span:nth-of-type(2) {
+        opacity: 0;
+    }
+    
+    .hamburger-button.active span:nth-of-type(3){
+        top: 30px;
+        left: 18px;
+        transform: translateY(-6px) rotate(45deg);
+        width: 35%;
+        color: #666666;
+        background-color: #666666;
+    }
+
+
+
+    .add-menu_sp {
+        position: fixed;
+        top: 0;
+        right: 0;
+        background-color: #ffffffdd;
+        display: block;
+        width: 100%;
+        height: 100vh;
+        padding: 20px 0;
+        z-index: 2;
+    }
+    
+    .add-menu_sp li {
+        font-weight: bold;
+        margin: 50px auto;
+        text-align: center;
+    }
+
+
+    .mordal {
+        display: block;
+    }   
+    
+    .add-modal_sp {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        display: block;
+        background-color: #666666;
+        z-index: 1;
+    }
+
+
+
+    .header-menu_sp {
+        width: 100%;
+        margin: 0;
+    }
+    
+    
+    .menu_sp {
+        line-height: 2.5;
+    }
+    
+    .menu_sp li a {
+        font-size: 20px;
+        color: #666666;
+        width: 100%;
+    }
+
+
+    
+    .subtitle h2 {
+        font-size: 24px;
+    }
+    
+
+    section {
+        width: 87%;
+        margin: 50px auto;
+    }
+
+
+
+    .about-content {
+        font-size: 11px;
+    }
+    
+
+    .profile-content h3  {
+        font-size: 17px;
+        margin: 15px 0;
+    }
+
+    .profile-content li {
+        font-size: 11px;
+    }
+
+}
