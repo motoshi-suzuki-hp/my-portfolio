@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="subtitle.css">
+    <link rel="stylesheet" href="fadein.css">
     <title>Portfolio</title>
 </head>
 <body>
@@ -15,13 +17,13 @@
         <nav class="header-menu_pc">
             <ul class="header-list">
                 <li>
-                    <a href="#about">ABOUT</a>
+                    <a href="#about" class="eachTextAnime">ABOUT</a>
                 </li>
                 <li>
-                    <a href="#profile">PROFILE</a>
+                    <a href="#profile" class="eachTextAnime">PROFILE</a>
                 </li>
                 <li>
-                    <a href="#works">WORKS</a>
+                    <a href="#works" class="eachTextAnime">WORKS</a>
                 </li>
             </ul>
         </nav>
@@ -54,11 +56,11 @@
 
     <body>
         <section id="about">
-            <div class="subtitle">
+            <div class="subtitle eachTextAnime">
                 <h2>ABOUT</h2>
             </div>
 
-            <div class="about-content">
+            <div class="about-content fadeInTrigger2">
                 <p>初めまして。<br>
                     私は現在理工学部4年生で、超音波を専門としております。<br>
                     元々バックエンドのシステム開発に興味があったのですが、フロントエンドにも触れてみたいと思い、Webデザインを勉強しはじめました。<br>
@@ -68,12 +70,12 @@
 
         </section>
         <section id="profile">
-            <div class="subtitle">
+            <div class="subtitle eachTextAnime">
                 <h2>PROFILE</h2>
             </div>
             <div class="profile-content">
-                <h3>鈴木 基嗣<span> / すずき もとし</span></h3>
-                <ul class="profile-list">
+                <h3 class="fadeInTrigger2">鈴木 基嗣<span> / すずき もとし</span></h3>
+                <ul class="profile-list fadeInTrigger3">
                     <li>
                         <p>Programming Languages:&nbsp;</p>
                         <p>HTML / CSS / JavaScript / PHP / C / C++</p>
@@ -94,7 +96,7 @@
             </div>
         </section>
         <section id="works">
-            <div class="subtitle">
+            <div class="subtitle eachTextAnime">
                 <h2>WORKS</h2>
             </div>
             
@@ -105,7 +107,10 @@
     <footer>
         
     </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
     <script type="text/javascript" src="hamburger.js"></script>
-    
+    <script src="subtitle.js"></script>
+    <script src="fadein.js"></script>
 </body>
 </html>
