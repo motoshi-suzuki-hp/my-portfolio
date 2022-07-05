@@ -1,14 +1,16 @@
 /* その場で */
-.fadeIn2{
+.fadeIn1{
+    animation-delay: 0.5s;
     animation-name:fadeInAnime;
-    animation-duration:2s;
+    animation-duration:1s;
     animation-fill-mode:forwards;
     opacity:0;
 }
 
-.fadeIn3{
+.fadeIn2{
+    animation-delay: 1s;
     animation-name:fadeInAnime;
-    animation-duration:3s;
+    animation-duration:1s;
     animation-fill-mode:forwards;
     opacity:0;
 }
