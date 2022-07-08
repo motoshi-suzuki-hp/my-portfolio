@@ -25,7 +25,7 @@ header img {
 
 .header-menu_pc {
     position: relative;
-    top: 20%;
+    top: 13%;
     left: 65%;
     width: fit-content;
     margin: 0;
@@ -49,6 +49,11 @@ header img {
     position: absolute;
     top: 45%;
     left: 65%;
+}
+
+.title a {
+    font-size: 52px;
+    color: #666666;
 }
 
 .hamburger-button {
@@ -87,10 +92,25 @@ section {
     margin: 50px auto;
 }
 
-.about-content, .profile-content, .works-content {
+.about-content, .profile-content, .works-content, .sns-content {
     width: 75%;
     margin: 0 auto;
     color: #888888;
+}
+
+
+
+footer {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+}
+
+footer p {
+    color: #AFAFAF;
+    font-size: 12px;
 }
 
 
@@ -114,6 +134,50 @@ section {
     display: flex;
 }
 
+/*works*/
+.works-list li {
+    width: 45%;
+}
+
+.works-img {
+    width: 100%;
+    position: relative;
+    background-color: #888888;
+    color: #AFAFAF;
+    font-size: calc(100vw/30);
+}
+
+.works-img::before {
+    content: "";
+    display: block;
+    padding-top: 100%;
+}
+
+.works-img p {
+    position: absolute;
+    top: 40%;
+    left: 15%;
+}
+
+.works-text {
+
+}
+
+/*sns*/
+
+.sns {
+
+}
+
+.sns-content {
+    text-align: center;
+}
+
+.sns-content i {
+    font-size: 50px;
+    color: #888888;
+}
+
 
 
 @media screen and (max-width:960px) {
@@ -127,6 +191,11 @@ section {
     }
 
     .title {
+        margin: 25px 0;
+        font-size: 44px;
+    }
+
+    .title a {
         margin: 25px 0;
         font-size: 44px;
     }
@@ -180,6 +249,12 @@ section {
 
 
     .title {
+        margin: 17px 0;
+        font-size: calc(100vw/18);
+        left: 60%;
+    }
+
+    .title a {
         margin: 17px 0;
         font-size: calc(100vw/18);
         left: 60%;
@@ -349,6 +424,10 @@ section {
 
     .profile-list li p:last-child {
         margin-left: 35px;
+    }
+
+    .works-list li {
+        width: 100%;
     }
 
 }
