@@ -155,26 +155,24 @@ footer p {
 
 .works-img {
     width: 100%;
-    position: relative;
-    background-color: #888888;
-    color: #AFAFAF;
-    font-size: calc(100vw/30);
+    margin-bottom: 25px;
+    border: solid 1px #888888;
 }
 
-.works-img::before {
-    content: "";
+.works-img a {
     display: block;
-    padding-top: 100%;
 }
 
-.works-img p {
-    position: absolute;
-    top: 40%;
-    left: 15%;
+.works-img a img {
+    display: block;
 }
 
 .works-text {
+    text-align: center;
+}
 
+.works-text h3 {
+    font-size: 25px;
 }
 
 /*sns*/
